@@ -40,45 +40,7 @@ export const sideMenuOptions = {
   defaultQuery: 'new',
 };
 
+// REMOVED: Team Planner routes removed for community edition
 export const TEAM_PLANNER_ROUTES:Ng2StateDeclaration[] = [
-  {
-    name: 'team_planner',
-    parent: 'optional_project',
-    url: '/team_planners/:query_id?query_props&cdate&cview',
-    redirectTo: 'team_planner.page',
-    views: {
-      '!$default': { component: WorkPackagesBaseComponent },
-    },
-    params: {
-      query_id: { type: 'opQueryId', dynamic: true },
-      cdate: { type: 'string', dynamic: true },
-      cview: { type: 'string', dynamic: true },
-      // Use custom encoder/decoder that ensures validity of URL string
-      query_props: { type: 'opQueryString' },
-    },
-  },
-  {
-    name: 'team_planner.page',
-    component: TeamPlannerPageComponent,
-    redirectTo: 'team_planner.page.show',
-    data: {
-      bodyClasses: 'router--team-planner',
-      sideMenuOptions,
-    },
-  },
-  {
-    name: 'team_planner.page.show',
-    data: {
-      baseRoute: 'team_planner.page.show',
-      sideMenuOptions,
-    },
-    views: {
-      'content-left': { component: TeamPlannerComponent },
-    },
-  },
-  ...makeSplitViewRoutes(
-    'team_planner.page.show',
-    undefined,
-    WorkPackageSplitViewComponent,
-  ),
+  // Empty array - all team planner routes removed
 ];

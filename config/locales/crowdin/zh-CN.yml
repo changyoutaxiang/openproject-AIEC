@@ -2245,7 +2245,7 @@ zh-CN:
       readonly_work_packages: 只读工作包
       scim_api: SCIM 服务器 API
       sso_auth_providers: 单点登录
-      team_planner_view: 工作组规划器视图
+      # REMOVED: team_planner_view: 工作组规划器视图
       virus_scanning: 反病毒扫描
       weighted_item_lists: 加权项目列表
       work_package_query_relation_columns: 工作包查询关系列
@@ -3332,7 +3332,7 @@ zh-CN:
   label_system_storage: "存储信息"
   label_table_of_contents: "目录"
   label_tag: "标记"
-  label_team_planner: "工作组规划器"
+  # REMOVED: label_team_planner: "工作组规划器"
   label_text: "长文本"
   label_this_month: "这个月"
   label_this_week: "这一周"
